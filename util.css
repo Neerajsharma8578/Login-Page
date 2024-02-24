@@ -1,0 +1,25 @@
+.text-center{
+    text-align: center;
+  }
+  
+  .bg-red{
+    background: red;
+  }
+  body{
+    background-image:url("gradientimg.gif");
+    background-size:100%,740px;
+  }
+  .mx-auto{
+    margin: auto;
+  }
+  
+  .flex{
+    display:flex;
+  } 
+  .flex-col{
+    flex-direction: column;
+  }
+  
+  .items-center{
+    align-items: center;
+  }

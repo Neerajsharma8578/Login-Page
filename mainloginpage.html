@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> button onclick</title>
+<link rel="stylesheet"href="page.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function welcome12()
+{
+
+window.open("http://127.0.0.1:5500/calc.html");
+}    </script>
+</head>
+<body style="text-align:center">
+<button onclick="welcome12()"> To Reach Simple Calculator Page <br> -> -> Click here <- <-</button>
+<style>
+   
+    button{
+        font-size:30px;
+        color:black;
+        background-color:aliceblue;
+        text-decoration: underline;
+    }
+</style>
+<style>
+    
+ 
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        background-image:url("gradientimg.gif");
+        background-size:100%,740px;
+    }
+    #container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(174, 17, 17);
+        border-radius: 5px;
+        box-shadow: 10px,10px,10px,10px red;
+        
+        
+    }
+    #loginform::before{
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+   
+
+}body{
+background-color:red;
+}
+
+#loginform::after{
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    
+}
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        animation: slideIn 0.5s ease forwards;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        animation: fadeIn 0.5s ease forwards;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes loginForm {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+    <h2>Login</h2>
+    <i class="fa fa-user"></i>
+    <form id="loginForm">
+        <label for="username"> Email Id:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <i class="fa fa-unlock-alt"></i>
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+<script src="page.js"></script>
+
+</body>
+</html>
